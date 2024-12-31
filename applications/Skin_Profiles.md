@@ -10,7 +10,9 @@
 
 <br/>
 
-Adaptive Blend is on a mission to transform skincare by making users’ skin priorities the focal point. The foundation of this transformation is our users’ unique ***Digital Skin Profiles***.
+Adaptive Blend is on a mission to transform skincare by prioritizing the unique needs of users’ skin over generic product-driven solutions. The cornerstone of this transformation lies in users’ unique ***Digital Skin Profiles***, which anchor personalized skincare experiences and gamification in web3.
+
+ <!--Adaptive Blend is on a mission to transform skincare by making users’ skin priorities the focal point.  The foundation of this transformation is our users’ unique ***Digital Skin Profiles***.-->
 
 ---
 <br>
@@ -19,11 +21,12 @@ Adaptive Blend is on a mission to transform skincare by making users’ skin pri
 
 Consumers face:
   - Uncertainty in product selection, leading to wasted spending.
-    - *>$70/user/year wasted on mismatched products*
+    - *>$70/user/year wasted on mismatched products spending*
     - *> 2 hours spent researching skincare products per product*
   - Lack of personalized solutions, resulting in allergic reactions or subpar results. 
     - *>30 hours/user/year wasted on trial-and-error per product*
   - Difficulty tracking skincare progress, leaving users guessing about long-term improvements.
+    - Users lack clarity on long-term improvements.
 
 
 ***"The core problem is that skincare revolves around products rather than the unique needs of individual skin priorities."***
@@ -37,42 +40,36 @@ Consumers face:
 
 Adaptive Blend is on a mission to transform skincare by making users’ skin priorities the focal point. 
  We aim to:
-  - Empower users to discover personalized insights through a Skin Profile built on first principles.
-    - *Digital representations of users’ personalized skin priorities based on an initial 512 potential combinations.*
+  - Empower users with personalized insights through Digital Skin Profiles built on first principles.
+    - *Digital representations of users’ personalized skin priorities*
+    - *Grounded in an initial 512 scientifically driven combinations of skin concerns, goals, and characteristics.*
   - Introduce an AI-powered Product Skincare Compatibility Analysis Tool (PSCT) for product evaluation.
     - *An AI agent that analyzes whether a given product aligns with a user’s Skin Profile*
-  - Establish a gamified and composable system using NFT Skin Profiles, allowing routine tracking and custom formulation creation.
-
+  - Create a gamified and composable skincare system using NFT Skin Profiles for routine tracking and custom formulation creation.
 
 The ultimate goal is to build a *Composable Skincare Ecosystem* that blends Real-World Applications with gamified, NFT-driven features, starting with compatibility analysis, routine tracking and evolving into a Crafting Station for custom formulations that users can digitally create, share and sell in a secondary marketplace.
 
+<br>
 
-### Overview
-
-**NFT Skin Profiles** : Digital representations of users’ personalized skin priorities based on an initial 512 potential combinations.
 
 
 **Integration into the Mintbase / NEAR Ecosystem:**
-- **Mintbase :** Utilized for minting and managing NFTs representing users’ unique Skin Profiles. These NFTs facilitate composability and gamification in skincare routines while enabling traceable secondary sales of custom formulations.
-- **Mintbase Graphql Indexer:** 
-- **NEAR Protocol :** Serves as the foundational blockchain infrastructure for secure, scalable, and energy-efficient NFT transactions. NEAR’s interoperability ensures seamless AI agent integration and user-friendly experiences.
+- **Mintbase :** For minting and managing NFT Skin Profiles.<!--Utilized for minting and managing NFTs representing users’ unique Skin Profiles. These NFTs facilitate composability and gamification in skincare routines while enabling traceable secondary sales of custom formulations.-->
+- **Mintbase GraphQL Indexer:**  For querying NFT Metadata..
+- **NEAR Protocol :** Serves as the foundational blockchain infrastructure for our Smart Contracts. 
 
+<br>
 
 
 **Why Our Team is Interested :**
-- Our team is driven by the inefficiency of trial-and-error in skincare, a process that costs consumers both time and money while delivering inconsistent results. We envision a world where every individual has access to scientifically backed, AI-driven skincare insights that evolve with their needs. By leveraging NEAR’s advanced blockchain and AI ecosystems, we aim to demonstrate how emerging technologies can bridge the gap between digital innovation and tangible consumer benefits, setting a new standard for transparency and personalization in skincare.
+- Our team is driven by the inefficiency of trial-and-error in skincare, a process that costs consumers both time and money while delivering inconsistent results. We envision a world where every individual has access to personalized skincare that adapt and evolve with their needs. By leveraging the Mintbase/NEAR ecosystem, we demonstrate how web3 technologies can merge digital innovation and tangible consumer benefits, setting a new standard for transparency and personalization in skincare.
 
-Please provide the following:
 
-- If the name of your project is not descriptive, a tag line (one sentence summary).
-- A brief description of your project.
-- An indication of how your project relates to / integrates into the Mintbase / NEAR ecosystem.
-- An indication of why your team is interested in creating this project.
 
 ### Project Details
-The Technical Implementation
+<!--The Technical Implementation-->
 
-**Step 1: Building the Skin Priority Profiles**
+**Step 1 : Building the Skin Priority Profiles**
 
 The foundation of the ecosystem lies in creating unique Skin Profiles based on a user’s key inputs:
 
@@ -82,27 +79,18 @@ The foundation of the ecosystem lies in creating unique Skin Profiles based on a
   - **Sensitivity:** Yes/No.
   - **Allergies/Ingredient Sensitivities**.
 
-Each combination forms a Single Skin Profile, unique to both the individual and ecosystem, and minted as an NFT. This ensures the data is secure, portable, and composable within the Adaptive Blend ecosystem.
+<!--Each combination forms a Single Skin Profile, unique to both the individual and ecosystem, and minted as an NFT. This ensures the data is secure, portable, and composable within the Adaptive Blend ecosystem.-->
 
-By anchoring the experience on scientifically grounded skin priorities, users gain clarity about their specific needs. NFTs allow for dynamic updates, enabling the profile to grow as users engage with the system.
+Each unique combination forms a Single Skin Profile, and minted as an NFT, ensuring secure and composable data for ongoing engagement in the Adaptive Blend ecosystem. These NFTs dynamically update as users interact with the platform, enabling:
+- Personalized product compatibility analysis and recommendations.
+- Routine tracking and performance evaluation.
+- Gamified features and secondary marketplace opportunities for custom formulations.
 
-**Step 2: The PSCT Agent - Evaluating Skincare Products**
-The Product Skincare Compatibility Tool (PSCT) is an AI agent that analyzes whether a given product aligns with a user’s Skin Profile. Users interact with the PSCT by:
-
-  - Inputting a product name or URL from an official e-commerce site.
-  - The PSCT scrapes verified product data, including active and inactive ingredients.
-  - The agent evaluates compatibility based on:
-    - Skin Priorities (Concerns & Desired Results).
-    - Ingredient Sensitivities or Allergies.
-    - Skin Type (e.g., oily skin may clash with heavy formulations).
-
-Dynamic Output:
-  - Compatibility Score: Clear percentage-based evaluation of product suitability.
-  - Detailed Insights: Highlights specific ingredients that align or conflict with the user’s profile.
-  - Alternative Recommendations: Suggests better-fitting products if incompatibilities are found.
-
-
-This tool eliminates guesswork in product selection and drives traffic by positioning Adaptive Blend as a trusted authority in skincare compatibility.
+- Technology Stack:
+    - Smart Contracts: Rust, NEAR SDK, Mintbase API
+    - Front End: React,  Svelte.
+    - Hosting: AWS.
+    - Interactive Comms stack - TikTok
 
 We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
 
@@ -116,21 +104,31 @@ We expect the teams to already have a solid idea about your project's expected f
 
 ### Ecosystem Fit
 
-Help us locate your project in the Mintbase landscape and what problems it tries to solve by answering each of these questions:
+<!--Help us locate your project in the Mintbase landscape and what problems it tries to solve by answering each of these questions: -->
 
 - Where and how does your project fit into the ecosystem?
-- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
-- What need(s) does your project meet?
-- Are there any other projects similar to yours in the Mintbase / NEAR ecosystem?
-  - If so, how is your project different?
-  - If not, are there similar projects in related ecosystems?
+  - Built on Mintbase, driving web3 adoption through a novel use case.
+  - Expanding Mintbase’s reach into wellness and personalized services.
+  - Expand NFT use cases by introducing a groundbreaking application for skincare personalization.
+  
 
-## Team :busts_in_silhouette:
+- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
+  - Skincare consumers seeking personalized solutions.
+
+- What need(s) does your project meet?
+  - Enhancing transparency and user engagement through ownership.
+  - Enabling data-driven improvements in skincare.
+  - Fostering collective intelligence in personalized skincare.
+
+- Are there any other projects similar to yours in the Mintbase / NEAR ecosystem?
+  - No directly comparable projects within the Mintbase/NEAR ecosystem. Adaptive Blend leverages NFTs uniquely for wellness and personalization.
+
+## Team 👥
 
 ### Team members
 
 - Muriithi : Founder
-- Names of team members
+- Additional team members TBD.
 
 ### Contact
 
@@ -145,27 +143,32 @@ Help us locate your project in the Mintbase landscape and what problems it tries
 
 ### Team's experience
 
-Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past. For research-related grants, references to past publications and projects in a related domain are helpful.
+- Web3 engineer and part-time security researcher on Immunefi.
 
-If anyone on your team has applied for a grant at the Mintbase previously, please list the name of the project and legal entity here.
+- Relevant expertise in blockchain, NFTs, and user-centric application design.
+
+<!--Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past. For research-related grants, references to past publications and projects in a related domain are helpful.
+
+If anyone on your team has applied for a grant at the Mintbase previously, please list the name of the project and legal entity here.-->
 
 ### Team Code Repos
 
-- https://github.com/<your_organisation>
-- https://github.com/<your_organisation>/<project_1>
-- https://github.com/<your_organisation>/<project_2>
+- https://github.com/Adaptive-Blend
+- https://github.com/Adaptive-Blend/skin-profiles
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- https://github.com/<team_member_1>
-- https://github.com/<team_member_2>
+- https://github.com/117l11
 
-### Team LinkedIn Profiles (if available)
-
-- https://www.linkedin.com/<person_1>
-- https://www.linkedin.com/<person_2>
 
 ## Development Status :open_book:
+**Research Conducted:**
+- **User Input Combinations Designed:** Developed 512 unique profiles tailored to various skin concerns, goals, and characteristics.
+
+- **Preliminary UI/UX Mockups Completed:** Initial designs for user interface and experience to ensure intuitive navigation and engagement.
+
+- **Early Integration Tests:** Conducted successful trials utilizing Mintbase and NEAR tools to validate technical feasibility and compatibility.
+
 
 If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
 
@@ -195,24 +198,24 @@ For each milestone,
 
 ### Overview
 
-- **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
-- **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in USN, and potentially NEAR and nUSDC, the amount will be calculated according to the exchange rate at the time of payment.
+- **Total Estimated Duration:** 1 Month.
+- **Full-Time Equivalent (FTE):**  1 FTE.
+- **Total Costs:** $10,000.
 
 ### Milestone 1 Example — Implement Mintbase Modules
 
-- **Estimated duration:** 1 month
-- **FTE:**  2
+- **Estimated duration:** 2 weeks
+- **FTE:**  1
 - **Costs:** 8,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Mintbase nodes and send test transactions, which will show how the new functionality works. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
-| 1. | Mintbase module: X | We will create a Mintbase / NEAR module that will... (Please list the functionality that will be implemented for the first milestone) |  
+| 0b. | Documentation | Inline code documentation and a basic tutorial. |
+| 0c. | Testing Guide | Unit tests covering core functions with setup instructions. |
+| 0d. | Docker | Dockerfile(s) for testing functionality. |
+| 0e. | Article | Publish a detailed article/workshop explaining project progress.
+| 1. | Mintbase Module: Profile Creation | Create module for minting NFT Skin Profiles. |  
 | 2. | Mintbase module: Y | We will create a Mintbase / NEAR module that will... |  
 | 3. | Mintbase module: Z | We will create a Mintbase / NEAR module that will... |  
 | 4. | NEAR chain integration | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
@@ -226,6 +229,17 @@ For each milestone,
 
 ...
 ## Future Plans
+
+- Short-Term:
+
+  - Improve consumer trust in skincare recommendations with actionable insights.
+  - Establish PSCT as a trusted platform for skincare compatibility analysis.
+  - Introduce routine tracking tools for skincare progress.
+
+- Long-Term:
+
+  - Expand into personalized skincare formulations with a gamified crafting station and formulations engine.
+  - Build a data-driven ecosystem for innovation and development in skincare.
 
 Please include here
 
