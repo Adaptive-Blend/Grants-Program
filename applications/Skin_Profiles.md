@@ -2,7 +2,7 @@
 
 - **Project Name:** Adaptive Blend - NFT Skin Profiles.
 - **Team Name:** Adaptive Blend
-- **Payment Address:** adaptive-blend.near
+- **Payment Address:** adaptiveblend.near
 - **[Level](../README.md#level_slider-levels):** 1
 
 ## Project Overview : 📄
@@ -64,43 +64,42 @@ The ultimate goal is to build a *Composable Skincare Ecosystem* that blends Real
 **Why Our Team is Interested :**
 - Our team is driven by the inefficiency of trial-and-error in skincare, a process that costs consumers both time and money while delivering inconsistent results. We envision a world where every individual has access to personalized skincare that adapt and evolve with their needs. By leveraging the Mintbase/NEAR ecosystem, we demonstrate how web3 technologies can merge digital innovation and tangible consumer benefits, setting a new standard for transparency and personalization in skincare.
 
+<br/>
 
+---
+<br/>
 
 ### Project Details
 <!--The Technical Implementation-->
+ **Objective:** 
+Design, implement, and validate a dynamic robust Off-Chain JSON Metadata Schema and v2 Skin Profile Encoding Specification that deterministically encodes the initial 512 combinations of user skin profiles (v2). This schema forms the foundation of the Adaptive Blend Ecosystem, ensuring composability, extensibility, and interoperability while establishing clear rules for future updates, versioning, and data integrity.
+ 
+<br/>
 
-**Step 1 : Building the Skin Priority Profiles**
+The Foundation of the Adaptive Blend Ecosystem are the **NFT Skin Profiles** *(Skin Priority Profiles)*. These are Digital representations of users’ personalized skin priorities based on an initial 512 potential combinations.
 
-The foundation of the ecosystem lies in creating unique Skin Profiles based on a user’s key inputs:
+Specification: - https://github.com/Adaptive-Blend/skin-profiles
 
-  - **Primary Concerns (up to 2):** Dryness, Dullness, Fine Lines & Wrinkles, Acne, Redness/Inflammation.
-  - **Desired Results (up to 3):** Deep Hydration, Brightening, Graceful Aging, Clearing Breakouts, Soothing Irritation.
-  - **Skin Type:** Dry, Normal, Combination, Oily.
-  - **Sensitivity:** Yes/No.
-  - **Allergies/Ingredient Sensitivities**.
 
-<!--Each combination forms a Single Skin Profile, unique to both the individual and ecosystem, and minted as an NFT. This ensures the data is secure, portable, and composable within the Adaptive Blend ecosystem.-->
-
-Each unique combination forms a Single Skin Profile, and minted as an NFT, ensuring secure and composable data for ongoing engagement in the Adaptive Blend ecosystem. These NFTs dynamically update as users interact with the platform, enabling:
+Each unique combination forms a Single Skin Profile, and minted as an NFT, ensuring secure and composable data for ongoing engagement in the Adaptive Blend ecosystem. These NFTs Metadata dynamically update as users interact with the platform, enabling:
 - Personalized product compatibility analysis and recommendations.
 - Routine tracking and performance evaluation.
 - Gamified features and secondary marketplace opportunities for custom formulations.
+- Collective Intelligence Oracle network in personalized skincare.
+
+
+
+
+***Note: The NFT Skin Profiles is the only part that will be developed as this Level 1 grant application, as shown on the milestones.***
+
 
 - Technology Stack:
     - Smart Contracts: Rust, NEAR SDK, Mintbase API
     - Front End: React,  Svelte.
-    - Hosting: AWS.
+    - Hosting: Arweave, AWS.
     - Interactive Comms stack - TikTok
 
-We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
 
-- Mockups/designs of any UI components
-- Data models / API specifications of the core functionality
-- An overview of the technology stack to be used
-- Documentation of core components, protocols, architecture, etc. to be deployed
-- PoC/MVP or other relevant prior work or research on the topic
-- What your project is _not_ or will _not_ provide or implement
-  - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
 
 ### Ecosystem Fit
 
@@ -162,23 +161,16 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 
 ## Development Status :open_book:
-**Research Conducted:**
-- **User Input Combinations Designed:** Developed 512 unique profiles tailored to various skin concerns, goals, and characteristics.
 
-- **Preliminary UI/UX Mockups Completed:** Initial designs for user interface and experience to ensure intuitive navigation and engagement.
+Current development ongoing at [Skin Profiles](https://github.com/Adaptive-Blend/skin-profiles) 
 
-- **Early Integration Tests:** Conducted successful trials utilizing Mintbase and NEAR tools to validate technical feasibility and compatibility.
+- academic publications relevant to the problem: 
+- GPT Research Diary
+- NoSass Skincare
+- Previous interface itertion mockups Vercel UI Mockups 
 
 
-If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
-
-- links to improvement proposals or [RFPs](https://github.com/mintbase/Grants-Program/tree/master/rfp-proposal) (requests for proposal),
-- academic publications relevant to the problem,
-- links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
-- references to conversations you might have had related to this project with anyone from the Mintbase Foundation,
-- previous interface iterations, such as mock-ups and wireframes.
-
-## Development Roadmap :nut_and_bolt:
+## Development Roadmap 🔩
 
 This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe _the functionality we should expect in as much detail as possible_, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
 
@@ -196,38 +188,94 @@ For each milestone,
 
 > :zap: If any of your deliverables is based on somebody else's work, make sure you work and publish _under the terms of the license_ of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Teams that submit others' work without attributing it will be immediately terminated.**
 
+***NFT Skin Profiles** : Digital representations of users’ personalized skin priorities based on an initial 512 potential combinations.*
+
+### **5 Milestones:**
+- 1] v2 Encoding Standard x Metadata Schema.
+- 2] NFT Skin Profile Metadata Storage and Updates on Arweave
+- 3] NFT Skin Profile Smart Contract(s)
+- 4] On-Chain Metadata Integration
+- 5] Tiktok User claim profile filter
 ### Overview
+
 
 - **Total Estimated Duration:** 1 Month.
 - **Full-Time Equivalent (FTE):**  1 FTE.
 - **Total Costs:** $10,000.
 
-### Milestone 1 Example — Implement Mintbase Modules
+### Milestone 1 — v2 Encoding Specification and Metadata Schema.
 
-- **Estimated duration:** 2 weeks
+- **Estimated duration:** 1 weeks
 - **FTE:**  1
-- **Costs:** 8,000 USD
+- **Costs:**  1,800 USD
+
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | Inline code documentation and a basic tutorial. |
-| 0c. | Testing Guide | Unit tests covering core functions with setup instructions. |
-| 0d. | Docker | Dockerfile(s) for testing functionality. |
-| 0e. | Article | Publish a detailed article/workshop explaining project progress.
-| 1. | Mintbase Module: Profile Creation | Create module for minting NFT Skin Profiles. |  
-| 2. | Mintbase module: Y | We will create a Mintbase / NEAR module that will... |  
-| 3. | Mintbase module: Z | We will create a Mintbase / NEAR module that will... |  
-| 4. | NEAR chain integration | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
+| 0a. 		| License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| 0b. 		| Documentation | Inline schema documentation, tutorial on schema usage, and API reference. |
+| 0c. 		| Testing Guide | Unit tests for schema validation, including versioning and composability checks. |
+| 0e. 		| Article | Publish a detailed article/workshop explaining project progress.
+| 1. 		| v2 Skin Profile Encoding Specification| Comprehensive markdown document `README.md` defining the deterministic encoding rules for Skin Priority Profiles. |
+| 2. 		| Off-Chain JSON Metadata Schema |  A well-defined  deterministic JSON Metadata Schema (reference data) following `NEP-171` that ensures deterministic represents all 512 combinations. |
+| 3. 		| Schema Update Rules | Define update logic, immutability rules, and validation structure for metadata changes. |
 
 
-### Milestone 2 Example — Additional features
+
+### Milestone 2 — NFT Skin Profile Metadata Storage and Updates on Arweave
 
 - **Estimated Duration:** 1 month
 - **FTE:**  1
-- **Costs:** 4,000 USD
+- **Costs:** 2,200 USD
 
-...
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. 		| License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| 0b. 		| Documentation | Inline schema documentation, tutorial on schema usage, and API reference. |
+| 0c. 		| Testing Guide | Unit Tests  to validate metadata integrity and version control on Arweave. |
+| 0e. 		| Article | Publish a detailed article/workshop explaining project progress.
+| 1. 		| Metadata Storage on Arweave | Upload, and retrieve metadata on Arweave. |
+| 2. 		| Update Rules |  Create logic to handle schema updates while preserving metadata history. |
+| 3. 		| Schema Update Rules | Define update logic, immutability rules, and validation structure for metadata changes. |
+
+
+### Milestone 3 — Arweave NFT Skin Profile Smart Contract(s)
+
+- **Estimated Duration:** 1 month
+- **FTE:**  1
+- **Costs:** 2,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. 		| License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| 0b. 		| Documentation | Inline contract documentation, tutorial for deployment, and API usage reference.|
+| 0c. 		| Testing Guide | Unit tests for contract functions, edge case handling, and integration with metadata. |
+| 0e. 		| Article | Publish a detailed article/workshop explaining project progress.
+| 1. 		| ERC-1155 Implementation| Develop smart contract with profile_id (top 128 bits) and user_hash (bottom 128 bits). |
+| 2. 		| Update Logic | Implement functions to update metadata URI and log changes in a verifiable way. |
+
+
+### Milestone 4 — On-Chain Metadata Integration
+
+- **Estimated Duration:** 1 month
+- **FTE:**  1
+- **Costs:** 3,200 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. 		| License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| 0b. 		| Documentation | Detailed guide on linking metadata URI with smart contracts and updating securely. |
+| 0c. 		| Testing Guide | Integration tests covering on-chain metadata storage and retrieval processes. |
+| 0e. 		| Article | Publish a detailed article/workshop explaining project progress.
+| 1. 		| URI Storage | Store metadata URI on-chain (Arweave/IPFS link) within NFT. |
+| 2. 		| Immutable Components | Hash and store critical immutable components (e.g., id, profile, user_hash). |
+| 3. 		| Verification Mechanisms | Implement functions to validate metadata and ensure immutability for critical fields. |
+
+
+
+
+
+
 ## Future Plans
 
 - Short-Term:
