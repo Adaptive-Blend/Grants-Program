@@ -6,23 +6,27 @@
 - **[Level](../README.md#level_slider-levels):** 1
 
 ## Project Overview : 📄
-***Skin Priority Profiles** : Digital representations of users’ personalized skin priorities based on an initial 512 potential combinations.*
+***Skin Priority Profiles** : Digital representations of users’ skin priorities based on an initial 512 potential combinations.*
 
 <br/>
 
-Adaptive Blend is transforming skincare by prioritizing users’ real-time skin needs through ***Digital—Skin Priority Profiles***,  which anchor personalized skincare experiences, enable
-data-driven decisions and foster engagement in a gamified Web3 ecosystem, **shifting focus from product-driven solutions to individual skin priorities.**
+<!--Adaptive Blend is transforming skincare by prioritizing users’ real-time skin needs through ***Digital—Skin Priority Profiles***,  which anchor personalized skincare experiences, enable data-driven decisions and foster engagement in a gamified Web3 ecosystem, **shifting focus from product-driven solutions to individual skin priorities.**-->
 
+The skincare industry is vast yet highly impersonal, forcing users into trial-and-error solutions. Adaptive Blend introduces **Skin Priority Profiles**, unique NFT representations of users’ skin priorities, based on an initial 512 potential combinations. By leveraging Mintbase and NEAR, Adaptive Blend shifts skincare from product-driven experimentation to a ***personalized, data-driven, and gamified ecosystem***.
+
+This project aims to demonstrate Web3’s ability to transform real-world industries, positioning NEAR as a leader in user-centric innovation.
 
 ---
 <br>
 
 **The Problem** : The skincare industry is vast, yet highly impersonal. 
 
+Skincare is a $200 billion industry globally, yet 76% of users report dissatisfaction due to mismatched products, wasted money, and inadequate personalization. With >$70/user/year lost on failed experiments, and >30 hours wasted managing allergic reactions annually, the skincare industry remains inefficient. The core issue: the focus is on products, not individual skin needs.
+
 Consumers face:
   - Uncertainty in product selection.
     - *>$70/user/year wasted on mismatched products spending*
-    - *> 2 hours spent researching per product*
+    - *2 hours spent researching per product*
   - Lack of personalized solutions
     - *>30 hours/user/year wasted managing allergic reactions and subpar results*
   - Difficulty tracking skincare progress.
@@ -38,9 +42,8 @@ Consumers face:
 
 
 **The Vision** : Shifting Skincare to Skin Priorities.
-
 <!--Adaptive Blend is on a mission to transform skincare by making users’ skin priorities the focal point.-->
-Adaptive Blend redefines skincare by placing users at the center. By prioritizing real-time individual skin priorities, we empower users to control their skincare journeys with adaptive, data-driven tools that cater directly to their unique needs.
+Adaptive Blend redefines skincare by placing users at the center, empowering them to control their journeys with adaptive, data-driven tools that cater directly to their unique needs.
 
   - Personalized Skin Priority Profiles
     - ***Core of Personalization:** 512 unique combinations of skin concerns, goals, and characteristics ensure precise guidance.*
@@ -57,8 +60,7 @@ Adaptive Blend redefines skincare by placing users at the center. By prioritizin
     - *Secondary marketplaces for community-generated formulations.*
 
 
-The ultimate goal is to build a *Composable Skincare Ecosystem*, blending Real-World Applications with Gamified, NFT-driven features, paving the way for collective intelligence in skincare.
- starting with compatibility analysis, routine tracking and evolving into a Crafting Station for custom formulations that users can digitally create, share and sell in a secondary marketplace.
+The ultimate goal is to build a *Composable Skincare Ecosystem*, blending Real-World Applications with Gamified, NFT-driven features, paving the way for collective intelligence in skincare. Starting with compatibility analysis, routine tracking and evolving into a Crafting Station for custom formulations that users can digitally create, share and sell in a secondary marketplace.
 
 <br>
 
@@ -151,10 +153,7 @@ This implementation establishes the critical infrastructure for Adaptive Blend�
 
 ### Team's experience
 
-- Web3 engineer and part-time security researcher on Immunefi.
-
-- Relevant expertise in blockchain, NFTs, and user-centric application design.
-
+Adaptive Blend is led by Muriithi, a Web3 engineer and security researcher with extensive experience in blockchain development and user-centric design. The project draws on insights from previous market validation efforts in the skincare industry, positioning it for success. Additional team members will be onboarded as the project scales, ensuring expertise in AI, product development, and community engagement.
 
 
 ### Team Code Repos
@@ -235,10 +234,10 @@ Current development ongoing at [Skin Profiles](https://github.com/Adaptive-Blend
 | 0b. 		| Documentation | Inline contract documentation, tutorial for deployment, and usage reference.|
 | 0c. 		| Testing Guide | Unit tests for contract functions, edge case handling, and integration with metadata. |
 | 0e. 		| Article | End-to-end demonstration with summary of achievements, challenges, and usage.|
-| 1. 		| NFT Smart Contract  | NEP-254 compliant Smart Contract extended from `mb-nft-v2`.|
+| 1. 		| NFT Smart Contract  | [NEP-254](https://nomicon.io/Standards/Tokens/MultiToken/Core) compliant Smart Contract extended from [mb-nft-v2](https://github.com/Mintbase/mb-contracts/tree/main/mb-nft-v2).|
 | 2. 		| Update Logic | Functions for Contract updates and change logging. |
 | 3. 		| Testnet Deploy | Deploy Skin Priority Profile NFT smart Contract on Near Testnet linking metadata URI and reference and run mint tests.|
-| 4. 		| Mainnet Deploy  | Deploy NEP-254 compliant Skin Priority Profile NFT smart Contract on Near Mainnet linking metadata URI and reference.|
+| 4. 		| Mainnet Deploy  | Deploy [NEP-254](https://nomicon.io/Standards/Tokens/MultiToken/Core) compliant Skin Priority Profile NFT smart Contract on Near Mainnet linking metadata URI and reference.|
 | 5.    | End-to-End Workflow | Fully functional system for creating, minting and updating personalized skincare NFTs.|
 
 
@@ -262,7 +261,7 @@ Current development ongoing at [Skin Profiles](https://github.com/Adaptive-Blend
 
 
 
-## Additional Information :heavy_plus_sign:
+## Additional Information ➕
 
 **How did you hear about the Grants Program?** 
 
@@ -285,11 +284,10 @@ By partnering with Mintbase and leveraging the NEAR blockchain, we will bring sc
 
 
 
-
 Thank you for considering our proposal. We look forward to your support in bringing Adaptive Blend to life.
 
-Best regards,  
-Carlos Muriithi (Founder)  
+Regards,  
+Muriithi (Founder)  
 Adaptive Blend  
 
 
